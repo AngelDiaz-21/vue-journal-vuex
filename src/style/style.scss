@@ -1,0 +1,23 @@
+$theme-colors: (
+    "primary":    #2c3e50,
+    "secondary":  #1d6042,
+    "success":    #198754,
+    "info":       #0dcaf0,
+    "warning":    #ffc107,
+    "danger":     #dc3545,
+    "light":      #f8f9fa,
+    "dark":       #343a40
+);
+
+//Descargamos el paquete de bootstrap con el comando: yarn add bootstrap
+
+// Hacemos referencia a los modulos de node y a ese paquete
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+
+// Le decimos al webpack como es que va a trabajar con esos archivos de sass. Instalamos una dependencia de desarrollo que no va a llegar a produccion con el comando: yarn add -D sass-loader@10 sass
+
+.pointer{
+    cursor: pointer;
+}
+
+
